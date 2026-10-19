@@ -1,0 +1,23 @@
+{
+  "_note": "ШАБЛОН. Имена полей подобраны по смыслу и НЕ сверены с текущей версией Smart Connections. Перед использованием откройте настройки плагина и введите значения вручную по таблице в README.md; не заменяйте файл data.json плагина без резервной копии.",
+  "embedding": {
+    "provider": "ollama",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "nomic-embed-text",
+    "dimensions": 768
+  },
+  "chat": {
+    "provider": "ollama",
+    "endpoint": "http://127.0.0.1:11434",
+    "model": "qwen2.5:7b"
+  },
+  "exclude": {
+    "folders": ["attachments", "Attachments", "_private", "secrets", ".trash"],
+    "extensions": ["png", "jpg", "jpeg", "gif", "webp", "pdf", "mp3", "mp4", "mov", "zip"],
+    "max_file_size_kb": 512
+  },
+  "privacy": {
+    "allow_remote_endpoints": false,
+    "send_telemetry": false
+  }
+}
